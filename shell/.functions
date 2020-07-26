@@ -1,0 +1,36 @@
+#PHPUnit tester
+testit () {
+	if [ -z $1 ]; then
+		vendor/bin/phpunit ./tests
+	else
+		#[ $2 -eq  0 ] && echo "--filter=$2"\;
+		if [ -d ./tests ]; then
+		#-iwholename '/trait' -prune\
+			find ./tests -type f\
+				-regex ".*.php"\
+				-iwholename *$1*\
+				-exec sh -c "echo; echo Test results for: {}; vendor/bin/phpunit {}" \;
+		else
+			echo "No tests directory found, please navigate to the project root!"
+		fi
+	fi
+}
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# Change working directory to the top-most Finder window location
+function cdf() { # short for `cdfinder`
+	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
+}
+
+fileexists () {
+	FILE=$1;
+	if [ -f "$FILE" ]; then
+    echo "$FILE exist"
+else 
+    echo "$FILE does not exist"
+fi
+}
