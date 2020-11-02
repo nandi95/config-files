@@ -2,6 +2,7 @@ alias art="php artisan"
 alias cls="clear"
 alias routes="php artisan route:list"
 alias reload=". ~/.aliases && . ~/.functions && echo .aliases/.functions reloaded!"
+alias nuclear-option="php artisan cache:clear && php artisan clear-compiled  && php artisan optimize && php artisan view:cache && php artisan permission:cache-reset && composer dump-autoload"
 
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 
