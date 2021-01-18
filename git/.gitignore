@@ -33,6 +33,10 @@ dist/
 build/
 
 
+# cache
+.rollup.cache/
+
+
 # Environments
 .env
 .venv

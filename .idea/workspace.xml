@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="374d86dc-16a4-4296-b78d-c6fba5adcf54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.wgetrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDE/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mac-install.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup-helpers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/git/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +43,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/IDE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,6 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604342711129</updated>
       <workItem from="1604342712388" duration="1347000" />
+      <workItem from="1610288488902" duration="2366000" />
+      <workItem from="1610313278595" duration="156000" />
     </task>
     <servers />
   </component>
@@ -77,11 +87,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="749" y="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604343567144">
-      <screen x="0" y="0" width="2048" height="1152" />
-    </state>
-    <state x="749" y="385" key="#com.intellij.fileTypes.FileTypeChooser/-1920.40.1920.1080/2048.-317.1080.1920/0.0.2048.1152@0.0.2048.1152" timestamp="1604343567144" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
