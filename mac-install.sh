@@ -24,15 +24,19 @@ brew install --cask iterm2
 brew install --cask alfred
 brew install --cask gpg-suite
 brew install --cask jetbrains-toolbox
+brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask discord
 brew install --cask zoomus
+brew install --cask signal
 brew install --cask firefox-developer-edition
 brew install --cask gitkraken
+brew install --cask gitify
 brew install --cask google-chrome
 brew install --cask commander-one
 brew install --cask qbittorrent
 brew install --cask vlc
+brew install --cask spotify
 
 # install global packages
 npm install -g tldr
@@ -55,13 +59,6 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 # set key repeat delay
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
-
-#configure git
-git config --global user.name 'Nandor Kraszlan'
-git config --global user.email "nandor.kraszlan@gmail.com"
-
-# clone config files and link them
-
 # Alfred configure
 # JetBrains install phpstorm
 # enable to open files from terminal
@@ -77,4 +74,5 @@ install_dotfile "shell/.aliases"
 install_dotfile "shell/.functions"
 install_dotfile "shell/.zsconf"
 install_dotfile "shell/.zshrc"
+echo "don't forget to replace 'yourUserNameHere' in your .zshrc file"
 install_dotfile ".wgetrc"
