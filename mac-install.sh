@@ -2,10 +2,12 @@
 
 # Ask for the administrator password upfront
 sudo -v
+# todo exit if pwd doesn't ends with /config-files
+xcode-select --install # todo - check if it exists
 
 #https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md
 #install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew tap homebrew/cask-versions
 
@@ -14,11 +16,11 @@ brew install git
 brew install python3
 brew install node
 brew install php
-brew install php@7.4
-brew install composer
-brew install wget
 brew install curl
+brew install wget
+brew install composer
 brew install act # github actions emulator
+brew install zsh
 brew install --cask docker
 brew install --cask iterm2
 brew install --cask alfred
@@ -27,7 +29,7 @@ brew install --cask jetbrains-toolbox
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask discord
-brew install --cask zoomus
+brew install --cask zoom
 brew install --cask signal
 brew install --cask firefox-developer-edition
 brew install --cask gitkraken
@@ -37,9 +39,11 @@ brew install --cask commander-one
 brew install --cask qbittorrent
 brew install --cask vlc
 brew install --cask spotify
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install global packages
 npm install -g tldr
+npm install -g yarn
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -60,19 +64,16 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Alfred configure
+# disable spotlight hotkey
+#defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys
 # JetBrains install phpstorm
-# enable to open files from terminal
 
 brew doctor
 brew update
 brew upgrade
 brew cleanup
 
-source setup-helpers
-
-install_dotfile "shell/.aliases"
-install_dotfile "shell/.functions"
-install_dotfile "shell/.zsconf"
-install_dotfile "shell/.zshrc"
-echo "don't forget to replace 'yourUserNameHere' in your .zshrc file"
-install_dotfile ".wgetrc"
+cp ./shell/.aliases /.aliases
+cp ./shell/.functions /.functions
+echo "source ~/.aliases" >> /.zshrc
+echo "source ~/.functions" >> /.zshrc
