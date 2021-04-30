@@ -77,3 +77,4 @@ cp ./shell/.aliases /.aliases
 cp ./shell/.functions /.functions
 echo "source ~/.aliases" >> /.zshrc
 echo "source ~/.functions" >> /.zshrc
+echo "run composer self-update --update-keys to set public keys for package verification"
