@@ -23,7 +23,7 @@ brew install act # github actions emulator
 brew install zsh
 brew install --cask docker
 brew install --cask iterm2
-brew install --cask alfred
+brew install --cask raycast
 brew install --cask gpg-suite
 brew install --cask jetbrains-toolbox
 brew install --cask visual-studio-code
