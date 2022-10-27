@@ -34,6 +34,7 @@ brew install --cask signal
 brew install --cask firefox-developer-edition
 brew install --cask gitkraken
 brew install --cask gitify
+brew install --cask fig
 brew install --cask google-chrome
 brew install --cask commander-one
 brew install --cask qbittorrent
@@ -44,6 +45,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # install global packages
 npm install -g tldr
 npm install -g yarn
+npm install -g git-trim
+npm install -g pnpm
+composer global require laravel/valet
+composer global require beyondcode/expose
+composer global require laravel/vapor-cli
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -63,7 +69,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 # set key repeat delay
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
-# Alfred configure
+# todo
 # disable spotlight hotkey
 #defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys
 # JetBrains install phpstorm
