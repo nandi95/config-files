@@ -15,6 +15,7 @@ brew tap homebrew/cask-versions
 brew install git
 brew install python3
 brew install node
+brew install nano
 brew install php
 brew install curl
 brew install wget
