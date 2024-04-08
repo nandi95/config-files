@@ -6,6 +6,8 @@ alias nuke-cache="php artisan config:clear && php artisan cache:clear && php art
 # you might also need `php artisan permission:cache-reset`
 
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+alias unrar=unar
+alias ls=eza
 
 for dir in ~/web/*; do
     if [ -d "$dir" ]; then
